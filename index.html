@@ -1,387 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bhaskar Bharat Sawant | AI Architect & IEEE Author</title>
-  <meta name="description" content="Bhaskar Bharat Sawant — AI Architect, IEEE Author, privacy-preserving systems researcher. Focus: federated learning governance, secure LLM systems, enterprise AI security, and scalable observability." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Bhaskar Bharat Sawant | AI Architect & IEEE Author" />
-  <meta property="og:description" content="Privacy-preserving AI, federated learning governance, secure LLM systems, enterprise AI security, and scalable observability." />
-  <meta property="og:type" content="website" />
+<title>Bhaskar Bharat Sawant | AI Architect | IEEE Author</title>
 
-  <!-- Basic SEO -->
-  <meta name="author" content="Bhaskar Bharat Sawant" />
-  <meta name="robots" content="index,follow" />
+<meta name="description" content="Bhaskar Bharat Sawant is an AI Architect, IEEE author, and researcher specializing in privacy-preserving AI, federated learning governance, secure LLM systems, and enterprise AI security.">
 
-  <!-- JSON-LD (Authority/Knowledge Panel friendly) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Bhaskar Bharat Sawant",
-    "jobTitle": "AI Architect",
-    "address": { "@type": "PostalAddress", "addressLocality": "Canton", "addressRegion": "MI", "addressCountry": "US" },
-    "email": "mailto:bhaskar.b.sawant@gmail.com",
-    "knowsAbout": [
-      "Privacy-Preserving AI",
-      "Federated Learning Governance",
-      "Secure LLM Systems",
-      "Enterprise AI Security",
-      "Observability and AIOps",
-      "DevSecOps"
-    ],
-    "sameAs": [
-      "REPLACE_WITH_LINKEDIN_URL",
-      "REPLACE_WITH_GOOGLE_SCHOLAR_URL",
-      "REPLACE_WITH_ORCID_URL"
-    ]
-  }
-  </script>
+<meta name="keywords" content="AI Architect, Federated Learning, Privacy Preserving AI, IEEE Author, Secure LLM, Enterprise AI Security">
 
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --panel:#0f1620;
-      --text:#eef3fb;
-      --muted:#b8c3d3;
-      --line:#223042;
-      --accent:#79a9ff;
-      --accent2:#8ef0c8;
-      --max:1040px;
-      --r:18px;
-      --shadow: 0 14px 38px rgba(0,0,0,.40);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1100px 800px at 10% 10%, rgba(121,169,255,.13), transparent 55%),
-        radial-gradient(900px 700px at 90% 25%, rgba(142,240,200,.10), transparent 55%),
-        var(--bg);
-    }
-    a{color:inherit;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:26px}
-    header{
-      position:sticky;top:0;z-index:20;
-      backdrop-filter: blur(10px);
-      background: rgba(11,15,20,.72);
-      border-bottom:1px solid rgba(34,48,66,.75);
-    }
-    .nav{
-      max-width:var(--max); margin:0 auto; padding:14px 26px;
-      display:flex; gap:18px; align-items:center; justify-content:space-between;
-    }
-    .brand{display:flex;flex-direction:column;gap:2px}
-    .brand strong{font-size:15px;letter-spacing:.2px}
-    .brand span{font-size:13px;color:var(--muted)}
-    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-    nav a{
-      display:inline-block;
-      padding:8px 10px;
-      border-radius:12px;
-      color:var(--muted);
-      border:1px solid transparent;
-    }
-    nav a:hover{
-      color:var(--text);
-      border-color: rgba(121,169,255,.30);
-      background: rgba(121,169,255,.08);
-      text-decoration:none;
-    }
-    .hero{padding:42px 0 22px}
-    .badgeRow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
-    .badge{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:6px 12px;border-radius:999px;
-      background: rgba(15,22,32,.72);
-      border:1px solid rgba(34,48,66,.85);
-      color:var(--muted);
-      font-size:13px;
-    }
-    .dot{width:8px;height:8px;border-radius:999px;background:var(--accent2);box-shadow:0 0 0 3px rgba(142,240,200,.12)}
-    h1{margin:10px 0 10px;font-size:44px;line-height:1.12;letter-spacing:-.6px}
-    .sub{
-      max-width:78ch;
-      margin:0 0 18px;
-      color:var(--muted);
-      font-size:18px;
-    }
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 0}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:10px 14px;border-radius:14px;
-      border:1px solid rgba(34,48,66,.9);
-      background: rgba(15,22,32,.82);
-      box-shadow: var(--shadow);
-      font-weight:650;
-      font-size:14px;
-      text-decoration:none;
-    }
-    .btn:hover{
-      background: rgba(121,169,255,.10);
-      border-color: rgba(121,169,255,.35);
-      text-decoration:none;
-    }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(121,169,255,.20), rgba(142,240,200,.12));
-      border-color: rgba(121,169,255,.40);
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:16px;
-      margin: 18px 0 48px;
-    }
-    @media (min-width:900px){ .grid{grid-template-columns: 1fr 1fr;} }
-    section{scroll-margin-top:86px}
-    .card{
-      padding:18px;
-      border-radius:var(--r);
-      border:1px solid rgba(34,48,66,.85);
-      background: rgba(15,22,32,.72);
-      box-shadow: var(--shadow);
-    }
-    .card h2{margin:0 0 10px;font-size:18px;letter-spacing:-.2px}
-    .card p{margin:0 0 10px;color:var(--muted)}
-    .list{margin:10px 0 0;padding-left:18px;color:var(--muted)}
-    .list li{margin:7px 0}
-    .pub{
-      margin-top:12px;
-      padding:12px 12px;
-      border-radius:16px;
-      border:1px solid rgba(34,48,66,.9);
-      background: rgba(11,15,20,.35);
-    }
-    .pub h3{margin:0 0 4px;font-size:15px;letter-spacing:-.15px}
-    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
-    .meta a{color:var(--accent)}
-    .hr{height:1px;background: rgba(34,48,66,.75);margin:14px 0}
-    footer{
-      border-top:1px solid rgba(34,48,66,.70);
-      padding:26px 0 40px;
-      color:var(--muted);
-      font-size:13px;
-    }
-    .k{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .k .badge{font-size:12.5px}
-    .note{color:var(--muted);font-size:13px}
-  </style>
+<meta name="author" content="Bhaskar Bharat Sawant">
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1, h2, h3 {
+    color: #111;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #666;
+}
+</style>
 </head>
 
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <strong>Bhaskar Bharat Sawant</strong>
-      <span>AI Architect • IEEE Author • Privacy-Preserving Systems</span>
-    </div>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Enterprise</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#speaking">Speaking</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="evidence.html">EB1A Evidence</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<main class="wrap">
-  <section class="hero">
-    <div class="badgeRow">
-      <div class="badge"><span class="dot"></span> Canton, Michigan, USA</div>
-      <div class="badge">Privacy-Preserving AI</div>
-      <div class="badge">Federated Learning Governance</div>
-      <div class="badge">Secure LLM Systems</div>
-      <div class="badge">Observability & AIOps</div>
-    </div>
+<div class="container">
 
-    <h1>Building secure, compliant AI systems that survive production reality.</h1>
-    <p class="sub">
-      I’m a senior engineer and published IEEE researcher working at the intersection of privacy, governance, and enterprise AI security.
-      My focus is turning research-grade ideas into deployable architectures: privacy-preserving analytics, compliance-aware federated learning,
-      secure LLM operations, and scalable observability for cloud environments.
-    </p>
+<h1>Bhaskar Bharat Sawant</h1>
+<div class="subtitle">
+AI Architect | IEEE Author | Privacy-Preserving Systems Researcher | Enterprise AI Security Leader
+</div>
 
-    <div class="cta">
-      <a class="btn primary" href="#contact">Contact for speaking / collaboration</a>
-      <a class="btn" href="#publications">View publications</a>
-      <a class="btn" href="evidence.html">EB1A evidence hub</a>
-      <a class="btn" href="REPLACE_WITH_LINKEDIN_URL" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </div>
+<div class="section">
+<h2>About</h2>
+<p>
+I am a senior AI Architect and published IEEE researcher specializing in privacy-preserving AI, federated learning governance, secure LLM systems, and scalable enterprise architectures. With over 15 years of experience in enterprise software engineering, DevSecOps, and distributed systems, I design secure, compliant, and production-ready AI systems for modern organizations.
+</p>
+</div>
 
-    <div class="k">
-      <div class="badge">15+ years engineering</div>
-      <div class="badge">Enterprise architecture & security</div>
-      <div class="badge">IEEE publications</div>
-      <div class="badge">Peer review & program committees</div>
-    </div>
-  </section>
+<div class="section">
+<h2>Research & Publications</h2>
 
-  <section id="about" class="grid">
-    <div class="card">
-      <h2>About</h2>
-      <p>
-        I design systems where <strong>security, privacy, and compliance</strong> are built-in constraints—especially for AI workloads.
-        My work spans differential privacy, federated learning under HIPAA/GDPR constraints, incident detection for LLM systems using minimal audit logs,
-        and lightweight observability architectures for large-scale cloud clusters.
-      </p>
-      <p class="note">
-        This site is intentionally structured to be “evidence-friendly” for academic, conference, and EB1A documentation.
-      </p>
-    </div>
+<h3>PrivBuild-AI: An RL-Powered Framework for Differentially Private Data in DevSecOps</h3>
+<p>Published – IEEE AIAHPC 2025</p>
 
-    <div class="card">
-      <h2>Research focus</h2>
-      <ul class="list">
-        <li>Privacy engineering (differential privacy, minimal-logging accountability)</li>
-        <li>Cross-border federated learning governance (policy-aware collaboration)</li>
-        <li>Secure LLM operations (auditability, insider-risk detection, incident response)</li>
-        <li>Observability-driven security and cost-aware AIOps</li>
-        <li>Responsible AI architectures for enterprise scale</li>
-      </ul>
-    </div>
-  </section>
+<h3>Compliance-Aware Cross-Border Federated Learning for Security Telemetry Under HIPAA/GDPR</h3>
+<p>Published – IEEE ComManTel 2025</p>
 
-  <section id="work" class="grid">
-    <div class="card">
-      <h2>Enterprise leadership</h2>
-      <p>
-        <strong>Lead Engineer | Solution Architect</strong><br />
-        Cornerstone Building Brands (via Chelsoft Solutions)
-      </p>
-      <div class="hr"></div>
-      <ul class="list">
-        <li>Architect and lead enterprise platforms integrating ERP (JDE), pricing intelligence, and automation pipelines.</li>
-        <li>Own security-by-design practices: identity, auditability, data minimization, and operational controls.</li>
-        <li>Design for reliability: performance, observability, failure isolation, and maintainability.</li>
-        <li>Bridge research and production: translating privacy/security concepts into deployable systems.</li>
-      </ul>
-    </div>
+<h3>Who Prompted What? Privacy-Preserving Incident Detection for LLM Systems</h3>
+<p>Accepted – ICGHIT 2026</p>
 
-    <div class="card">
-      <h2>Architecture principles</h2>
-      <ul class="list">
-        <li><strong>Least exposure:</strong> minimize data movement; reduce logs; enforce governance boundaries.</li>
-        <li><strong>Operational clarity:</strong> observability that supports incident response and accountability.</li>
-        <li><strong>Cost-aware scale:</strong> measure signal-to-cost; avoid architecture that can’t be operated.</li>
-        <li><strong>Proof-ready:</strong> decisions documented for audits, compliance, and executive stakeholders.</li>
-      </ul>
-    </div>
-  </section>
+<h3>Scalable AIOps: Lightweight Observability and Anomaly Detection</h3>
+<p>Accepted – SoutheastCon 2026</p>
 
-  <section id="publications" class="grid">
-    <div class="card" style="grid-column:1/-1;">
-      <h2>Selected publications</h2>
-      <p>Replace “Link” with IEEE Xplore links (or DOI) as you finalize your public list.</p>
+</div>
 
-      <div class="pub">
-        <h3>PrivBuild-AI: An RL-Powered Framework for Differentially Private Data in DevSecOps</h3>
-        <div class="meta">Published • IEEE AIAHPC 2025 • <a href="REPLACE_WITH_IEEE_XPLORE_LINK_1" target="_blank" rel="noopener noreferrer">Link</a></div>
-        <p class="note">Reinforcement learning adjusts privacy controls dynamically to preserve utility while maintaining privacy guarantees in DevSecOps pipelines.</p>
-      </div>
+<div class="section">
+<h2>Enterprise Leadership</h2>
+<p>
+Lead Engineer | Solution Architect – Cornerstone Building Brands
+</p>
+<ul>
+<li>Architecting secure enterprise platforms integrating ERP, pricing intelligence, and AI automation.</li>
+<li>Implementing security-by-design across data pipelines and distributed systems.</li>
+<li>Driving scalable cloud-native observability and reliability engineering.</li>
+</ul>
+</div>
 
-      <div class="pub">
-        <h3>Compliance-Aware Cross-Border Federated Learning for Security Telemetry Under HIPAA/GDPR</h3>
-        <div class="meta">Published • IEEE ComManTel 2025 • <a href="REPLACE_WITH_IEEE_XPLORE_LINK_2" target="_blank" rel="noopener noreferrer">Link</a></div>
-        <p class="note">A governance-aligned FL framework that enables collaboration while honoring policy constraints and minimizing cross-border exposure.</p>
-      </div>
+<div class="section">
+<h2>Research Focus Areas</h2>
+<ul>
+<li>Privacy-Preserving AI</li>
+<li>Federated Learning Governance</li>
+<li>Secure LLM Architecture</li>
+<li>AI Runtime Security</li>
+<li>Observability-Driven Security</li>
+</ul>
+</div>
 
-      <div class="pub">
-        <h3>Who Prompted What? Privacy-Preserving Incident Detection for LLM Systems Using Minimal Audit Logs</h3>
-        <div class="meta">Accepted • ICGHIT 2026</div>
-        <p class="note">Minimal-audit logging strategy for detecting misuse in enterprise LLM systems while reducing privacy risk and operational overhead.</p>
-      </div>
+<div class="section">
+<h2>Professional Service</h2>
+<ul>
+<li>Technical Program Committee Member (IEEE Conferences)</li>
+<li>Peer Reviewer – AI & Security Conferences</li>
+<li>Contributor – Security & AI Communities</li>
+</ul>
+</div>
 
-      <div class="pub">
-        <h3>Scalable AIOps: A Framework for Lightweight Observability and Anomaly Detection in Large-Scale Cloud Clusters</h3>
-        <div class="meta">Accepted • SoutheastCon 2026</div>
-        <p class="note">Resource-efficient anomaly detection and observability that balances signal quality with cost and operational maintainability.</p>
-      </div>
-    </div>
-  </section>
+<div class="section">
+<h2>Contact</h2>
+<p>
+Email: <a href="mailto:bhaskar.b.sawant@gmail.com">bhaskar.b.sawant@gmail.com</a><br>
+Location: Canton, Michigan, USA
+</p>
+</div>
 
-  <section id="speaking" class="grid">
-    <div class="card">
-      <h2>Speaking</h2>
-      <p>
-        I speak on responsible AI architectures, privacy engineering, federated learning governance, secure LLM operations,
-        and observability-driven security.
-      </p>
-      <ul class="list">
-        <li>Responsible AI Architectures (enterprise constraints, risk controls, measurable governance)</li>
-        <li>Federated learning under HIPAA/GDPR (policy-aware collaboration)</li>
-        <li>Secure LLM systems (auditability, minimal logs, insider-risk detection)</li>
-        <li>Scalable observability & AIOps (cost-aware anomaly detection)</li>
-      </ul>
-    </div>
+</div>
 
-    <div class="card">
-      <h2>Events (examples)</h2>
-      <ul class="list">
-        <li>IEEE conferences (AIAHPC, ComManTel, SoutheastCon)</li>
-        <li>OWASP / Security community events</li>
-        <li>Regional security conferences and industry meetups</li>
-      </ul>
-      <p class="note">
-        Add confirmed dates + proof links as you finalize schedules.
-      </p>
-    </div>
-  </section>
+<div class="footer">
+© 2026 Bhaskar Bharat Sawant | AI Architect & IEEE Author
+</div>
 
-  <section id="service" class="grid">
-    <div class="card">
-      <h2>Peer review & professional service</h2>
-      <ul class="list">
-        <li>Peer review for conference/journal submissions (AI, security, privacy)</li>
-        <li>Technical Program Committee participation</li>
-        <li>Contributor/reviewer in security and standards communities</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Review areas</h2>
-      <ul class="list">
-        <li>Post-quantum cryptography key management (cloud & hybrid)</li>
-        <li>AI security and LLM governance</li>
-        <li>Federated learning, privacy, and compliance engineering</li>
-        <li>Cloud security, DevSecOps, observability</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="grid">
-    <div class="card" style="grid-column:1/-1;">
-      <h2>Contact</h2>
-      <p>
-        For speaking invitations, collaborations, peer review requests, or enterprise AI architecture engagements:
-      </p>
-      <p>
-        <strong>Email:</strong> <a href="mailto:bhaskar.b.sawant@gmail.com">bhaskar.b.sawant@gmail.com</a><br />
-        <strong>Location:</strong> Canton, Michigan, USA
-      </p>
-      <p class="note">
-        Prefer phone for quick follow-ups? Add your contact number here if you want it public.
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <div>© <span id="y"></span> Bhaskar Bharat Sawant</div>
-    <div class="note">Minimal, research-forward profile designed for credibility and evidence packaging.</div>
-  </footer>
-</main>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
