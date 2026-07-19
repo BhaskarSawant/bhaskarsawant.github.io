@@ -12,6 +12,8 @@
   <meta property="og:title" content="Bhaskar Bharat Sawant | Lead Engineer, Solution Architect & AI Security Researcher" />
   <meta property="og:description" content="IEEE Senior Member, published researcher, international speaker, and TPC member with 102 completed paper reviews across 28 international conferences and specialized tracks." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://bhaskarsawant.github.io/bhaskar-sawant-headshot.png" />
+  <meta property="og:image:alt" content="Professional headshot of Bhaskar Bharat Sawant" />
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -185,6 +187,66 @@
     .btn.primary:hover{
       color:#ffffff;
       background:linear-gradient(135deg,#285fcf,#0c7779);
+    }
+    .heroLayout{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:28px;
+      align-items:center;
+    }
+    .heroContent{min-width:0}
+    .heroPhotoWrap{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .heroPhotoFrame{
+      position:relative;
+      width:min(100%,330px);
+      aspect-ratio:4/5;
+      padding:7px;
+      border-radius:28px;
+      background:linear-gradient(145deg,rgba(47,111,237,.88),rgba(15,139,141,.78),rgba(117,87,217,.72));
+      box-shadow:0 22px 48px rgba(29,55,94,.20);
+    }
+    .heroPhotoFrame::before{
+      content:"";
+      position:absolute;
+      inset:-18px;
+      z-index:-1;
+      border-radius:36px;
+      background:radial-gradient(circle at 50% 35%,rgba(47,111,237,.18),rgba(15,139,141,.08) 48%,transparent 72%);
+      filter:blur(8px);
+    }
+    .heroPhoto{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 28%;
+      border-radius:22px;
+      border:4px solid rgba(255,255,255,.96);
+      background:#dbe5f1;
+    }
+    .photoCaption{
+      margin-top:10px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12.5px;
+    }
+    @media (min-width:900px){
+      .heroLayout{
+        grid-template-columns:minmax(0,1.65fr) minmax(270px,.72fr);
+        gap:46px;
+      }
+      .heroPhotoWrap{justify-content:flex-end}
+    }
+    @media (max-width:899px){
+      .heroPhotoWrap{order:-1}
+      .heroPhotoFrame{width:min(78vw,300px)}
+      .hero{text-align:center}
+      .badgeRow,.cta{justify-content:center}
+      .sub{margin-left:auto;margin-right:auto}
     }
     .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0 44px}
     @media (min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
@@ -378,36 +440,57 @@
 
 <main class="wrap">
   <section class="hero">
-    <div class="badgeRow">
-      <div class="badge"><span class="dot"></span> Canton, Michigan, USA</div>
-      <div class="badge">IEEE Senior Member</div>
-      <div class="badge">Published IEEE Author</div>
-      <div class="badge">Conference Speaker</div>
-      <div class="badge">TPC Member & Peer Reviewer</div>
-      <div class="badge">Hackathon Judge & Mentor</div>
-    </div>
-    <div class="badgeRow">
-      <div class="badge">AI Security</div>
-      <div class="badge">Cloud-Native Systems</div>
-      <div class="badge">DevSecOps</div>
-      <div class="badge">Secure LLM Systems</div>
-      <div class="badge">Privacy-Preserving AI</div>
-      <div class="badge">Platform Engineering</div>
-    </div>
+    <div class="heroLayout">
+      <div class="heroContent">
+        <div class="badgeRow">
+          <div class="badge"><span class="dot"></span> Canton, Michigan, USA</div>
+          <div class="badge">IEEE Senior Member</div>
+          <div class="badge">Published IEEE Author</div>
+          <div class="badge">Conference Speaker</div>
+          <div class="badge">TPC Member & Peer Reviewer</div>
+          <div class="badge">Hackathon Judge & Mentor</div>
+        </div>
+        <div class="badgeRow">
+          <div class="badge">AI Security</div>
+          <div class="badge">Cloud-Native Systems</div>
+          <div class="badge">DevSecOps</div>
+          <div class="badge">Secure LLM Systems</div>
+          <div class="badge">Privacy-Preserving AI</div>
+          <div class="badge">Platform Engineering</div>
+        </div>
 
-    <h1>Lead Engineer, Solution Architect, IEEE Senior Member & AI Security Researcher.</h1>
-    <p class="sub">
-      I build secure, scalable enterprise systems and translate research-grade ideas into production-ready architectures.
-      My work focuses on AI security, privacy-preserving systems, federated learning governance, secure LLM operations,
-      DevSecOps, AIOps, and cloud-native platform engineering.
-    </p>
+        <h1>Lead Engineer, Solution Architect, IEEE Senior Member & AI Security Researcher.</h1>
+        <p class="sub">
+          I build secure, scalable enterprise systems and translate research-grade ideas into production-ready architectures.
+          My work focuses on AI security, privacy-preserving systems, federated learning governance, secure LLM operations,
+          DevSecOps, AIOps, and cloud-native platform engineering.
+        </p>
 
-    <div class="cta">
-      <a class="btn primary" href="#contact">Contact for speaking / collaboration</a>
-      <a class="btn" href="#publications">View publications</a>
-      <a class="btn" href="#speaking">Speaking engagements</a>
-      <a class="btn" href="https://www.linkedin.com/in/bhaskar-bharat-sawant-533218122/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a class="btn" href="https://scholar.google.com/citations?hl=en&user=vmQxjpsAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Contact for speaking / collaboration</a>
+          <a class="btn" href="#publications">View publications</a>
+          <a class="btn" href="#speaking">Speaking engagements</a>
+          <a class="btn" href="https://www.linkedin.com/in/bhaskar-bharat-sawant-533218122/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=en&user=vmQxjpsAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </div>
+      </div>
+
+      <div class="heroPhotoWrap">
+        <div>
+          <div class="heroPhotoFrame">
+            <img
+              class="heroPhoto"
+              src="bhaskar-sawant-headshot.png"
+              alt="Professional headshot of Bhaskar Bharat Sawant"
+              width="1200"
+              height="1500"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="photoCaption">Bhaskar Bharat Sawant</div>
+        </div>
+      </div>
     </div>
   </section>
 
